@@ -8,13 +8,13 @@
 Summary:	Catalyst::Plugin::Authentication - Authentication infrastructure plugin for the Catalyst framework
 Summary(pl.UTF-8):	Catalyst::Plugin::Authentication - wtyczka infrastruktury uwierzytelniania dla szkieletu Catalyst
 Name:		perl-Catalyst-Plugin-Authentication
-Version:	0.09
+Version:	0.100091
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/Catalyst-Plugin-Authentication-%{version}.tar.gz
-# Source0-md5:	59be3895b1c79609545d5472ec4e4bb5
+# Source0-md5:	cd14db0da73f11f2a8dee309d0a2b202
 URL:		http://search.cpan.org/dist/Catalyst-Plugin-Authentication/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -63,4 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{perl_vendorlib}/Catalyst/Plugin/*.pm
 %{perl_vendorlib}/Catalyst/Plugin/Authentication
+%{perl_vendorlib}/Catalyst/Authentication
 %{_mandir}/man3/*
