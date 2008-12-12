@@ -55,6 +55,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{perl_vendorlib}/Catalyst/Plugin/Authorization
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -64,4 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Catalyst/Plugin/*.pm
 %{perl_vendorlib}/Catalyst/Plugin/Authentication
 %{perl_vendorlib}/Catalyst/Authentication
+%{perl_vendorlib}/Catalyst/Plugin/Authorization
 %{_mandir}/man3/*
